@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "geo",
+    "slug": "geo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/a.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/a.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/a.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/a.png"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+- make project
+npx create-expo-app <name app>
+- test run
+npx expo start
+
+
+- update SDK
+1. npx react-native upgrade
+2. npm install react@49  <-- @<version>
+3. npx expo install --fix 
+
+
+
+- build app to apk
+1. npm install --global expo-cli eas-cli
+2. expo login
+3. expo whoami
+4. set config 
+
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {}
+  }
+}
+
+5. npx cross-env EAS_NO_VCS=1 eas build -p android --profile preview
+
+other project 
+1. npm install 
+2. npx expo start
+
