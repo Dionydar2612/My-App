@@ -19,6 +19,7 @@ export default function App() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState("");
   const navigation = useNavigation();
+  
 
   
   const [passwordIsVisible, setPasswordIsVisible] =
@@ -29,7 +30,7 @@ export default function App() {
     if (email.trim() === '' || password.trim() === '') {
       Alert.alert('Please enter all required information');
     } else {
-      navigation.navigate('homepage');
+      navigation.navigate('Drawer');
     }
   };
 

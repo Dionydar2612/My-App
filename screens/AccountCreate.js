@@ -17,6 +17,7 @@ import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 
 
+
 export default function App() {
   const handlePress = () => {
     Alert.alert(
@@ -49,6 +50,7 @@ export default function App() {
     React.useState(false);
 
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
+
 
   const handlePressChack = () => {
     if (password !== confirmPassword) {

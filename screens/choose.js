@@ -7,9 +7,11 @@ import {
     Text,
     TouchableOpacity,
     View,
+    TextInput
 } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+import { Feather } from "@expo/vector-icons";
 
 export default function App() {
     const navigation = useNavigation();
